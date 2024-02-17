@@ -58,7 +58,7 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <a href="/" class="btn btn-primary btn-user btn-block">
+                                        <a href="{{url('/dashboard2')}}" class="btn btn-primary btn-user btn-block">
                                             Login
                                         </a>
                                         <hr>

@@ -25,3 +25,24 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('auth.register');
 });
+
+
+Route::get('/dashboard2', function () {
+    return view('admin.dashboard2');
+});
+
+Route::get('/peminjam', function () {
+    return view('admin.peminjam');
+});
+
+Route::get('/buku', function () {
+    return view('admin.buku');
+});
+
+Route::get('/kategori', function () {
+    return view('admin.kategori');
+});
+
+Route::get('/user', function () {
+    return view('admin.user');
+});

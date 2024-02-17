@@ -78,7 +78,7 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <a href="dashboard" class="btn btn-primary btn-user btn-block">
+                                        <a href="/login" class="btn btn-primary btn-user btn-block">
                                             Register Account
                                         </a>
                                         <hr>
