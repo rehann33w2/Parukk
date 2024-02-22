@@ -246,9 +246,9 @@
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Setyo Dwi Santoso</td>
-                                        <td>setyo@gmail.com</td>
-                                        <td>Persada</td>
+                                        <td>raihan hakim</td>
+                                        <td>raihan@gmail.com</td>
+                                        <td>kotabumi</td>
                                         <td>Admin</td>
                                         <td>
                                                         <!-- Button trigger for login form modal -->

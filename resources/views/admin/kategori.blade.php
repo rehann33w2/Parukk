@@ -243,7 +243,7 @@
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Setyo Dwi Santoso</td>
+                                        <td>raihan hakim</td>
                                         <td>
                                                         <!-- Button trigger for login form modal -->
                                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editk">

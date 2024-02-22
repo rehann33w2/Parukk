@@ -1,7 +1,9 @@
 <?php
 
+use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\LoginController;
+ 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,9 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
-Route::get('/dashboard', function () {
-    return view('dashboard');
 });
 Route::get('/login', function () {
     return view('auth.login');
@@ -46,3 +45,7 @@ Route::get('/kategori', function () {
 Route::get('/user', function () {
     return view('admin.user');
 });
+
+
+ 
+Route::post('/login', [LoginController::class, 'LoginController']);

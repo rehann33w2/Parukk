@@ -178,6 +178,7 @@
                                         <th>Tanggal Pengembalian</th>
                                         <th>Status Buku</th>
                                     </tr>
+                                     <thead>                    
                                 </thead>
                                 <tbody>
                                     <tr>
