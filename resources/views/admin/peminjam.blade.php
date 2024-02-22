@@ -113,7 +113,7 @@
             <header>
                 <nav class="navbar navbar-expand navbar-light navbar-top">
                     <div class="container-fluid">
-                        <h3>Kategori Buku</h3>
+                        <h3>Kategori Peminjaman</h3>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -178,11 +178,21 @@
                                         <th>Tanggal Pengembalian</th>
                                         <th>Status Buku</th>
                                     </tr>
-                                     <thead>                    
+                                    <th>1</th>
+                                        <th>Reval</th>
+                                        <th>Cipondoh</th>
+                                        <th>Komik</th>
+                                        <th>19agustus</th>
+                                        <th>Aktif</th>
+                                     <thead>
+                                        <th>2</th>
+                                        <th>muhamad fakri</th>
+                                        <th>batu ceper</th>
+                                        <th>novel</th>
+                                        <th>30november</th>
+                                        <th>aktif</th>                    
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                    </tr>
                                 </tbody>
                             </table>
                         </div>

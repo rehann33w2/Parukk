@@ -47,5 +47,6 @@ Route::get('/user', function () {
 });
 
 
+
  
-Route::post('/login', [LoginController::class, 'LoginController']);
+Route::post('/user', [LoginController::class, 'LoginController']);

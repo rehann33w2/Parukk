@@ -57,7 +57,7 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <a href="/login" class="btn btn-primary btn-user btn-block">
+                                        <a href="/dashboard2" class="btn btn-primary btn-user btn-block">
                                             Login
                                         </a>
                                         <hr>
@@ -67,7 +67,7 @@
                                         <a class="small" href="forgot-password.html">Forget Password?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="/login">Create an Account!</a>
+                                        <a class="small" href="/register">Create an Account!</a>
                                     </div>
                                 </div>
                             </div>
