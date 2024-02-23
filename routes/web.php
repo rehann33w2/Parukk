@@ -4,7 +4,6 @@ use App\Http\Controllers\Auth\LoginRegisterController;
 use App\Http\Controllers\AuthController;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginController;
  
 /*
 |--------------------------------------------------------------------------
@@ -48,14 +47,5 @@ Route::get('/user', function () {
     return view('admin.user');
 });
 
-Route::post('/user', [LoginController::class, 'LoginController']);
+Route::post('/register', [AuthController::class, 'registerPost']);
 
-Route::post('/register', [AuthController::class, 'registerPost'])->name('register');
-Route::controller(LoginRegisterController::class)->group(function() {
-Route::get('/auth.register', [AuthController::class, 'register'])->name('register');
-Route::get('/login', 'login')->name('login');
-Route::post('/authenticate', 'authenticate')->name('authenticate');
-Route::get('/dashboard', 'dashboard')->name('dashboard');
-Route::post('/logout', 'logout')->name('logout');
-    
-});

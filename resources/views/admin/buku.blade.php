@@ -133,6 +133,9 @@
                                             <div class="avatar avatar-md">
                                                 <img src="./assets/compiled/jpg/1.jpg">
                                             </div>
+
+                                                
+
                                         </div>
                                     </div>
                                 </a>

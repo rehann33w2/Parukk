@@ -11,7 +11,7 @@ class AuthController extends Controller
 {
     public function register() {
 
-        return view('register');
+        return view('/register');
     }
 
     public function registerPost(Request $request) {
@@ -22,11 +22,10 @@ class AuthController extends Controller
         $user->password = Hash::make($request->password);
         $user->save();
 
-        return back()->with('success', 'Register successfuly');
-    }
+        if ($user)
+        return redirect('/login');
 
-    public function login() {
-        return view('login');
+        return back()->with('success', 'Register successfuly');
     }
 
 }

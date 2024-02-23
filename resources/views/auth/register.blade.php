@@ -30,7 +30,6 @@
         <div class="row justify-content-center">
 
             <div class="col-xl-10 col-lg-12 col-md-9">
-
                 <div class="card o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
@@ -41,22 +40,15 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Belum Punya Akun Daftar Disini</h1>
                                     </div>
-                                    <div class="card-body">
-                                        @if (Session::has('success'))
-                                            <div class="alert alert-success" role="alert">
-                                                {{Session::get('suceess')}}
-                                            </div>
-                                        @endif
-                                    </div>
-                                    <form class="/register'" method="post">
+                                    <form class="/register" method="post">
                                         @csrf
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
+                                            <input type="email" name="name" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
                                                 placeholder="Nama Lengkap...">
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
+                                            <input type="email" name="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
                                                 placeholder="Emaill Adress...">
                                         </div>
@@ -75,9 +67,9 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <div class="mb-3">
+                                        <div class="mb-form-group">
                                             <div class="d-grid">
-                                                <button a href="/dashboard2" class="btn btn-primary">Register Account</button>
+                                                <button  class="btn btn-primary">Register Account</button>
                                             </div>
                                         </div>
                                         <hr>                                       
