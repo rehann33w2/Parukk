@@ -41,31 +41,32 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Belum Punya Akun Daftar Disini</h1>
                                     </div>
-                                    <form class="user">
+                                    <div class="card-body">
+                                        @if (Session::has('success'))
+                                            <div class="alert alert-success" role="alert">
+                                                {{Session::get('suceess')}}
+                                            </div>
+                                        @endif
+                                    </div>
+                                    <form class="/register'" method="post">
+                                        @csrf
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
                                                 placeholder="Nama Lengkap...">
                                         </div>
                                         <div class="form-group">
-                                            <input type="username" class="form-control form-control-user"
-                                                id="" placeholder="Username">
+                                            <input type="email" class="form-control form-control-user"
+                                                id="exampleInputEmail" aria-describedby="emailHelp"
+                                                placeholder="Emaill Adress...">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Role (1,2,3)">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email adress" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Email Address">
+                                                id="" placeholder="Password">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Repeat Password">
+                                                id="exampleInputPassword" placeholder=" Confrim Password">
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
@@ -74,17 +75,16 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <a href="/login" class="btn btn-primary btn-user btn-block">
-                                            Register Account
-                                        </a>
-                                        <hr>
+                                        <div class="mb-3">
+                                            <div class="d-grid">
+                                                <button a href="/dashboard2" class="btn btn-primary">Register Account</button>
+                                            </div>
+                                        </div>
+                                        <hr>                                       
                                     </form>
                                     <hr>
                                     <div class="text-center">
                                         <a class="small" href="forgot-password.html">Forget Password?</a>
-                                    </div>
-                                    <div class="text-center">
-                                        <a class="small" href="/register">Create an Account!</a>
                                     </div>
                                 </div>
                             </div>
