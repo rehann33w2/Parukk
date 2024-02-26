@@ -1,4 +1,4 @@
-@extends('partials.app')
+@extends('layouts-landing.app')
 @section('konten')
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="hero">
@@ -8,7 +8,8 @@
                     <h2>Welcome to <span>Perpustakaan Digital</span></h2>
                     <p>Perpustakaan dengan beragam jenis buku yang akan memenuhi imajinasimu dengan harapan</p>
                     <div class="d-flex justify-content-center justify-content-lg-start">
-                        <a href="{{url('/login')}}" class="btn-get-started">Sign Up</a>
+                        <a href="{{ url('/login') }}" class="btn-get-started me-2">Sign Up</a>
+                        <a href="{{ url('/login') }}" class="btn-get-started">Sign In</a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2">

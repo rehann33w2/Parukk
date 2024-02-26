@@ -40,13 +40,13 @@
 </head>
 
 <body>
-    @include('partials.navbar')
+    @include('layouts-landing.navbar')
 
     <main id="main">
         @yield('konten')
     </main><!-- End #main -->
 
-    @include('partials.footer')
+    @include('layouts-landing.footer')
 
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>

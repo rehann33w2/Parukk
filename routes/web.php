@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BerandaAdminController;
  
 /*
 |--------------------------------------------------------------------------
@@ -48,5 +49,16 @@ Route::get('/user', function () {
 Route::post('/register', [AuthController::class, 'registerPost']);
 
 
+Route::prefix('admin')->middleware(['auth', 'auth.admin'])->group(function () {
+    Route::get('Beranda', [BerandaAdminController::class, 'index'])->name('admin.beranda');
+});
 
 
+Auth::routes();
+
+Route::get('logout', function
+() {
+    Auth::logout();
+    return redirect('login');
+})->name('logout');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
