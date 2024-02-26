@@ -1,8 +1,6 @@
 <?php
 
-use App\Http\Controllers\Auth\LoginRegisterController;
 use App\Http\Controllers\AuthController;
-use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Route;
  
 /*
@@ -48,4 +46,7 @@ Route::get('/user', function () {
 });
 
 Route::post('/register', [AuthController::class, 'registerPost']);
+
+
+
 

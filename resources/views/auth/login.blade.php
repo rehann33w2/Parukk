@@ -35,7 +35,7 @@
                                 <div class="p-5">
                                     <div class="text-center">
                                     </div>
-                                    <form class="register">
+                                    <form class="login">
                                         <div class="form-group">
                                             <input type="" class="form-control form-control-user"
                                                 id="exampleInputPassword" placeholder="Username">
